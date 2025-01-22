@@ -7,6 +7,7 @@ import Register from './pages/user/register/Register';
 import Login from './pages/user/login/Login';
 import Home from './pages/user/home/Home';
 import Shop from './pages/user/shop/Shop';
+import { ToastContainer } from 'react-toastify';
 
 export default function App() {
   const router=createBrowserRouter(
@@ -23,8 +24,12 @@ export default function App() {
           element:<Login/>
         },
         {
-          path:'home',
+          path:'/',
           element:<Home/>
+        },
+        {
+         path:'/home',
+         element:<Home/>
         },
         {
           path:'shop',
@@ -43,7 +48,9 @@ export default function App() {
   )
   return (
    <>
+    <ToastContainer />
     <RouterProvider router={router}/>
+    
    </>
   )
 }
