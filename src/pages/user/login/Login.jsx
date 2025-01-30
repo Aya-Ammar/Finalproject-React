@@ -18,7 +18,7 @@ export default function Login() {
      //console.log(response);
      if(response.status==200){
       localStorage.setItem("userToken",response.data.token);
-      navigate('/home');
+      navigate('/');
      }
     
     } catch (error) {
@@ -49,7 +49,7 @@ export default function Login() {
       <Button variant="primary" type="submit" disabled={isLoading}>
       {isLoading?"Looding...":"Login"}
       </Button>
-      <p className='ms-auto pt-3 '>Dont't have an account?  <Link to={'/register'}>Sign up</Link></p>
+      <p className='ms-auto pt-3 '>Dont't have an account?  <Link to={'/auth/register'}>Sign up</Link></p>
       </span>
      
     </Form>

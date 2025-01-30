@@ -16,9 +16,9 @@ export default function CustomeNavbar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto gap-4 d-flex flex-row justify-content-center align-items-center fw-bold ">
             <span className='d-flex me-5 gap-4 '>
-            <Nav.Link as={Link} to={'/home'}>Home</Nav.Link>
+            <Nav.Link as={Link} to={'/'}>Home</Nav.Link>
             <Nav.Link as={Link} to={'/shop'}>Shop</Nav.Link>
-            <Nav.Link as={Link} to={'/login'}>Login</Nav.Link>
+            <Nav.Link as={Link} to={'/auth/login'}>Login</Nav.Link>
             </span>
             <span className='d-flex gap-2'>
             <Nav.Link as={Link} ><img src='src\assets\icons\user.svg' /></Nav.Link>

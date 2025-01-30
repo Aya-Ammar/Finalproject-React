@@ -68,7 +68,7 @@ export default function Register() {
       <Button variant="primary" type="submit" disabled={isLoading}>
         {isLoading?"Looding...":"Register"}
       </Button>
-      <p className='ms-auto pt-3 '> Have an account?  <Link to={'/login'}>Sign In</Link></p>
+      <p className='ms-auto pt-3 '> Have an account?  <Link to={'/auth/login'}>Sign In</Link></p>
       </span>
      
     </Form>
