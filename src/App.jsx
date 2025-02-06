@@ -10,6 +10,7 @@ import Shop from './pages/user/shop/Shop';
 import { ToastContainer } from 'react-toastify';
 import UserLayout from './layouts/UserLayout';
 import CategoryProducts from './pages/user/products/CategoryProducts';
+import ProductDetails from './pages/user/products/ProductDetails';
 
 export default function App() {
   const router=createBrowserRouter(
@@ -45,7 +46,12 @@ export default function App() {
       {
         path:'categories/:categoryId',
         element:<CategoryProducts/>
+      },
+      {
+        path:'/ProductDetails/:productId',
+        element:<ProductDetails/>
       }
+    
     
     ]
 

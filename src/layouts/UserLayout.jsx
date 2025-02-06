@@ -6,7 +6,6 @@ export default function UserLayout() {
   return (
     <>
     <CustomeNavbar/>
-    <Categories/>
     <Outlet/>
     </>
   )

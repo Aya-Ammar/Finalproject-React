@@ -5,6 +5,7 @@ import Categories from '../category/Categories';
 export default function Shop() {
   return (
     <>
+    <Categories/>
     <Products/>
     </>
   )

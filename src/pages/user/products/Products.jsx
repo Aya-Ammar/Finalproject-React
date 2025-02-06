@@ -17,7 +17,7 @@ export default function Products() {
       <div className=' d-flex flex-row justify-content-center align-items-center  px-5 text-center flex-wrap  gap-4'> 
         {error?<div className='alert alert-danger'>{error}</div>:''}
         {data?.products?.map(product=>(
-          <CustomProduct key={product._id} secure_url={product.mainImage.secure_url} name={product.name} price={product.price} />
+          <CustomProduct key={product._id} Id={product._id} secure_url={product.mainImage.secure_url} name={product.name} price={product.price} />
          
         ))
         }
